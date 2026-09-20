@@ -1,0 +1,4 @@
+import { Mail, MapPin, Phone } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import styles from './Footer.module.css'
+export default function Footer(){return <footer className={styles.footer}><div className={styles.main}><div><Link to="/" className={styles.brand}>Urban Spice<span>.</span></Link><p>Thoughtful food for the everyday celebration.<br/>Made fresh, delivered with care.</p><div className={styles.social}><Mail/><MapPin/><Phone/></div></div><div><h4>Explore</h4><Link to="/menu">Our menu</Link><Link to="/about">Our story</Link><Link to="/contact">Contact us</Link></div><div><h4>Visit us</h4><p>24 Garden View, Indiranagar<br/>Bengaluru 560038</p><p>Tue - Sun, 11am - 11pm<br/>+91 98765 43210</p></div></div><div className={styles.bottom}>© 2024 Urban Spice <span>Made for good moments.</span></div></footer>}
